@@ -266,7 +266,6 @@ private extension FeedTableViewCell {
             indicatorView.layer.cornerRadius = 5
             indicatorView.backgroundColor = (i == currentImageIndex) ? .white : .clear
             indicatorView.translatesAutoresizingMaskIntoConstraints = false
-            indicatorView.heightAnchor.constraint(equalToConstant: 4).isActive = true
             imagePositionIndicatorStackView.addArrangedSubview(indicatorView)
         }
     }

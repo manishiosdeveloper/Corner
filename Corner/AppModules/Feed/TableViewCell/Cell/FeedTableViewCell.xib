@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -24,31 +23,28 @@
                                 <rect key="frame" x="0.0" y="0.0" width="370" height="117.66666666666667"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GoD-ab-w7I">
-                                <rect key="frame" x="0.0" y="99.666666666666671" width="370" height="8"/>
+                                <rect key="frame" x="0.0" y="105.66666666666667" width="370" height="2"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aOR-iW-Um6">
-                                        <rect key="frame" x="0.0" y="3.6666666666666572" width="370" height="1"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="1" id="Ssi-Bt-4hW"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="0.0" width="370" height="2"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xZ7-1W-i70">
-                                        <rect key="frame" x="0.0" y="2" width="370" height="4"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="370" height="2"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="4" id="qhc-Wu-FnT"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="8" id="FLK-Hp-8Ko"/>
+                                    <constraint firstAttribute="height" constant="2" id="FLK-Hp-8Ko"/>
                                     <constraint firstAttribute="trailing" secondItem="aOR-iW-Um6" secondAttribute="trailing" id="Kpg-Y7-lZR"/>
                                     <constraint firstItem="xZ7-1W-i70" firstAttribute="centerY" secondItem="GoD-ab-w7I" secondAttribute="centerY" id="SC7-Qb-iqp"/>
+                                    <constraint firstItem="xZ7-1W-i70" firstAttribute="top" secondItem="GoD-ab-w7I" secondAttribute="top" id="VV1-KL-Tp3"/>
+                                    <constraint firstItem="aOR-iW-Um6" firstAttribute="top" secondItem="GoD-ab-w7I" secondAttribute="top" id="WpO-lC-wbK"/>
                                     <constraint firstItem="aOR-iW-Um6" firstAttribute="leading" secondItem="GoD-ab-w7I" secondAttribute="leading" id="Yp8-pT-xp7"/>
+                                    <constraint firstAttribute="bottom" secondItem="aOR-iW-Um6" secondAttribute="bottom" id="avw-ID-BOw"/>
+                                    <constraint firstAttribute="bottom" secondItem="xZ7-1W-i70" secondAttribute="bottom" id="bB3-zS-fSn"/>
                                     <constraint firstItem="xZ7-1W-i70" firstAttribute="leading" secondItem="GoD-ab-w7I" secondAttribute="leading" id="d5a-gI-CnB"/>
-                                    <constraint firstItem="aOR-iW-Um6" firstAttribute="centerY" secondItem="GoD-ab-w7I" secondAttribute="centerY" id="deW-yI-M1C"/>
                                     <constraint firstAttribute="trailing" secondItem="xZ7-1W-i70" secondAttribute="trailing" id="qiO-af-EeO"/>
                                 </constraints>
                             </view>
@@ -114,9 +110,4 @@
             <point key="canvasLocation" x="189.31297709923663" y="68.309859154929583"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

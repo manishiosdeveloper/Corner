@@ -38,7 +38,7 @@
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fRq-to-Baw"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="fRq-to-Baw" firstAttribute="trailing" secondItem="Cmi-Cj-qqy" secondAttribute="trailing" id="Jmi-cr-Zj0"/>
                 <constraint firstItem="Cmi-Cj-qqy" firstAttribute="top" secondItem="BjA-AI-Wvq" secondAttribute="top" id="hUh-qD-KSX"/>

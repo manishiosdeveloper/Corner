@@ -65,13 +65,11 @@ class FeedViewModel {
     }
     
     func commentSelection(_ postId: String) {
-        print("\(postId) was tapped")
-        Utilities.generateHaptic()
+        print("comment \(postId) was tapped")
     }
     
     func bookmarkSelection(_ postId: String) {
-        print("\(postId) was tapped")
-        Utilities.generateHaptic()
+        print("Bookmark \(postId) was tapped")
     }
 }
 
