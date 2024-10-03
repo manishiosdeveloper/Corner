@@ -16,7 +16,7 @@ class FeedViewModel {
         case success(data: [FeedTableViewCellModel])
         
         enum LoadingState {
-            case initalData
+            case initialData
             case pagination
             case PTR
         }

@@ -41,7 +41,7 @@ class FeedViewController: BaseViewController, StoryboardLoadable {
         setupTableViewDatasource()
         registerFeedViewModelCallback()
         
-        viewModel.fetchFeedItems(state: .loading(.initalData))
+        viewModel.fetchFeedItems(state: .loading(.initialData))
     }
 }
 
@@ -118,7 +118,7 @@ private extension FeedViewController {
                 switch state {
                 case .loading(let state):
                     switch state {
-                    case .initalData:
+                    case .initialData:
                         showLoader(true)
                     case .pagination, .PTR:
                         break
