@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="BjA-AI-Wvq" customClass="ReactionView" customModule="Corner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="487" height="176"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cmi-Cj-qqy">
+                    <rect key="frame" x="0.0" y="0.0" width="487" height="142"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGs-ep-xdi">
+                            <rect key="frame" x="0.0" y="0.0" width="487" height="142"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4dh-wn-oTJ">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="bGs-ep-xdi" firstAttribute="leading" secondItem="Cmi-Cj-qqy" secondAttribute="leading" id="mIf-WL-taK"/>
+                        <constraint firstAttribute="bottom" secondItem="bGs-ep-xdi" secondAttribute="bottom" id="pML-7u-jhs"/>
+                        <constraint firstItem="bGs-ep-xdi" firstAttribute="top" secondItem="Cmi-Cj-qqy" secondAttribute="top" id="vs8-AU-AK1"/>
+                        <constraint firstAttribute="trailing" secondItem="bGs-ep-xdi" secondAttribute="trailing" id="xh1-nu-7Kb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fRq-to-Baw"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fRq-to-Baw" firstAttribute="trailing" secondItem="Cmi-Cj-qqy" secondAttribute="trailing" id="Jmi-cr-Zj0"/>
+                <constraint firstItem="Cmi-Cj-qqy" firstAttribute="top" secondItem="BjA-AI-Wvq" secondAttribute="top" id="hUh-qD-KSX"/>
+                <constraint firstItem="Cmi-Cj-qqy" firstAttribute="leading" secondItem="fRq-to-Baw" secondAttribute="leading" id="hgX-4w-nDh"/>
+                <constraint firstItem="fRq-to-Baw" firstAttribute="bottom" secondItem="Cmi-Cj-qqy" secondAttribute="bottom" id="xeX-Hh-KGN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectionView" destination="bGs-ep-xdi" id="EuO-w3-E6h"/>
+            </connections>
+            <point key="canvasLocation" x="510.68702290076334" y="-598.59154929577471"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
